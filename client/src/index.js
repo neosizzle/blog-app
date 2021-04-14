@@ -12,6 +12,9 @@ import { createStore , applyMiddleware, compose }from 'redux'
 import thunk from 'redux-thunk'
 import reducers from './reducers'
 
+//global styles
+import "./index.css";
+
 //initialize global store
 const store = createStore( reducers , compose(applyMiddleware(thunk)))
 
