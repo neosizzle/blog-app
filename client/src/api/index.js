@@ -1,7 +1,7 @@
 //to handle front end side of api calls
 import axios from 'axios';
 
-const url = "http://localhost:5000/posts"
+const url = "https://memories-clone-app.herokuapp.com/posts"
 
 export const fetchPosts = ()=>{
      return axios.get(url)

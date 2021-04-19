@@ -23,7 +23,7 @@ app.use('/posts', postsRoutes)
 
 
 app.get('/', (req, res, next) =>{
-    res.send('<h1>Hello world<h1>');
+    res.send('<h1>Hello to memories!<h1>');
 })
 
 app.listen(app.get('port'), server =>{

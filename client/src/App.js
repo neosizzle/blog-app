@@ -33,7 +33,7 @@ const App = () => {
 
     const [currentId, setCurrentId] = useState(null)
 
-    //useeffect hook to get the posts nd plug it into store
+    //useeffect hook to get the posts and plug it into store
     useEffect(() => {
 
      dispatch(getPosts())
