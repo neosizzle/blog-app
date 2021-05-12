@@ -11,6 +11,9 @@ const Form = ({currentId , setCurrentId}) => {
 
     const classes = useStyles()//apply styling 
     const post = useSelector(state => currentId ? state.posts.find((p)=>p._id === currentId): null)//get post if currentid is not null
+    
+    //useSelector is a hook that helps us to retrive states from the store instead of passing them from parent to children
+    //state paramter is the entire global redux store
 
     const dispatch = useDispatch();
 

@@ -31,6 +31,7 @@ const App = () => {
     //dispatch action creation to fetch all blogs
     const dispatch = useDispatch();
 
+    //id state for individual posts
     const [currentId, setCurrentId] = useState(null)
 
     //useeffect hook to get the posts and plug it into store
@@ -43,6 +44,7 @@ const App = () => {
 
     return ( 
 
+        //header title 
         <ThemeProvider theme = {theme}>
                     <Container maxidth = "lg">
             <AppBar className = {classes.appBar} position = "static" color = "inherit">
@@ -52,14 +54,17 @@ const App = () => {
 
 
 
+        {/* Content  */}
             <Grow in>
                 <Container>
                     <Grid container className = {classes.mainContainer} justify = "space-between" alignItems = "stretch" spacing = {3}>
 
+                {/* Posts */}
                     <Grid item xs={12} sm = {7}>
                         <Posts setCurrentId = {setCurrentId} ></Posts>
                     </Grid>
 
+                    {/* Form */}
                     <Grid item xs={12} sm = {4}>
                         <Form setCurrentId = {setCurrentId} currentId = {currentId}></Form>
                     </Grid>

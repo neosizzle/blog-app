@@ -1,6 +1,9 @@
 import * as actions from '../constants/actionTypes'
 
 export default (posts = [],action)=>{ //reducers are functions that help process data called by apis and returns the new state
+//posts[] is the default state that is accisible globally by the store
+
+//the following methods are just changing the global state according to its needs
     switch (action.type) {
         case actions.FETCH_ALL:
 
